@@ -9,8 +9,9 @@ class Instructions(BasePrompt):
     """Instructions class.
 
     The instructions are passed to the LLM as secondary input. Different
-    model may use these differently. For example, chat models may
-    receive instructions in the system-prompt.
+    models may use these differently. For example, chat models may accept
+    instructions in the `system_prompt`, which is separate from
+    the normal model input prompt.
     """
 
     def __repr__(self) -> str:
